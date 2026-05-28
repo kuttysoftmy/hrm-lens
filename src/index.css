@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #020617;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Scrollbar style */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0b0f19;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
+
+@keyframes pulseGlow {
+  0%, 100% { opacity: 0.6; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.05); }
+}
+
+.glow-active {
+  animation: pulseGlow 2s infinite ease-in-out;
+}
